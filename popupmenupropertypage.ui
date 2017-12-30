@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Jens Kallup</author>
+ <comment>only for non-profit use</comment>
+ <exportmacro></exportmacro>
+ <class>PopupMenuPropertyPage</class>
+ <widget class="QMainWindow" name="PopupMenuPropertyPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <connections/>
+</ui>
