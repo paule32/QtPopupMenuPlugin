@@ -2,7 +2,7 @@
     "Name" : "PopupMenuPlugin",
     "Version" : "0.0.1",
     "CompatVersion" : "0.0.1",
-    "Vendor" : "KALLUP * non-profit Software",
+    "Vendor" : "KALLUP",
     "Copyright" : "(C) 2018 Jens Kallup",
     "License" : "only for non-profit use",
     "Description" : "QtCreator Plugin for handle QtPopupMenus",

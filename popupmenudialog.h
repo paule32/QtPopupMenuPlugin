@@ -11,12 +11,12 @@
 class PopupMenuDialog : public QDialog
 {
 public:
-    explicit PopupMenuDialog(PopupMenuPlugin *plugin = 0, QWidget *parent = 0);
+    explicit PopupMenuDialog(PopupMenuPane *plugin = 0, QWidget *parent = 0);
 
     QSize sizeHint() const;
 
 private:
-    PopupMenuPlugin * mnu;
+    PopupMenuPane * mnu;
 };
 
 #endif

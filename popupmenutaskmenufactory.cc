@@ -3,6 +3,7 @@
 #include "popupmenutaskmenu.h"
 #include "popupmenutaskmenufactory.h"
 #include "popupmenuplugin.h"
+#include "popupmenupropertypage.h"
 
 PopupMenuTaskMenuFactory::PopupMenuTaskMenuFactory(QExtensionManager *parent)
     : QExtensionFactory(parent)
@@ -18,7 +19,7 @@ PopupMenuTaskMenuFactory::createExtension(
     if (iid != Q_TYPEID(QDesignerTaskMenuExtension))
     return 0;
 
-    if (PopupMenuPlugin * mnu = qobject_cast<PopupMenuPlugin*>(object))
+    if (PopupMenuPane * mnu = qobject_cast<PopupMenuPane*>(object))
     return new PopupMenuTaskMenu(mnu, parent);
 
     return 0;

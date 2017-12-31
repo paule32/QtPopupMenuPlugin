@@ -1,20 +1,18 @@
 QT += designer widgets xml
 
 SOURCES += \
-    custom_popupmenuplugin.cc \
-               popupmenuplugin.cc \
+    popupmenuplugin.cc \
     popupmenutaskmenufactory.cc \
     popupmenutaskmenu.cc \
-    popupmenudialog.cc \
-    popupmenupropertypage.cc
+    popupmenupropertypage.cc \
+    popupmenupane.cc
 
 HEADERS += \
-    custom_popupmenuplugin.h \
-           popupmenuplugin.h \
+    popupmenuplugin.h \
     popupmenutaskmenufactory.h \
     popupmenutaskmenu.h \
-    popupmenudialog.h \
-    popupmenupropertypage.h
+    popupmenupropertypage.h \
+    popupmenupane.h
 
 FORMS += \
     popupmenupropertypage.ui

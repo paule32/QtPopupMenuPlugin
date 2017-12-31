@@ -4,8 +4,8 @@
 #include <QDesignerFormWindowInterface>
 #include <QDesignerPropertySheetExtension>
 
-#include <coreplugin/coreconstants.h>
-#include <coreplugin/modemanager.h>
+//#include <coreplugin/coreconstants.h>
+//#include <coreplugin/modemanager.h>
 
 #include    "popupmenupropertypage.h"
 #include "ui_popupmenupropertypage.h"

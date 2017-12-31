@@ -9,6 +9,7 @@
 #include <QDesignerTaskMenuExtension>
 
 #include "popupmenuplugin.h"
+#include "popupmenupane.h"
 
 class PopupMenuTaskMenu : public QObject, public QDesignerTaskMenuExtension
 {
@@ -16,7 +17,7 @@ class PopupMenuTaskMenu : public QObject, public QDesignerTaskMenuExtension
     Q_INTERFACES(QDesignerTaskMenuExtension)
 
 public:
-    PopupMenuTaskMenu(PopupMenuPlugin *_m, QObject * parent = 0);
+    PopupMenuTaskMenu(PopupMenuPane *_m, QObject * parent = 0);
 
     QAction *preferredEditAction() const;
     QList<QAction *> taskActions() const;
@@ -26,9 +27,7 @@ private slots:
 
 private:
     QAction * editElementAction;
-    PopupMenuPlugin * mnu;
-
-    QObject * paintElement;
+    PopupMenuPane * mnu;
 };
 
 #endif

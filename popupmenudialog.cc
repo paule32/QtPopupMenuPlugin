@@ -2,7 +2,7 @@
 #include <QDialog>
 #include <QWidget>
 #include <QSize>
-#include <QTableWidget>
+#include <QtWidgets/QTableWidget>
 
 #include "popupmenudialog.h"
 #include "popupmenuplugin.h"

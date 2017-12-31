@@ -8,13 +8,14 @@
 #include "popupmenuplugin.h"
 
 #include "popupmenupropertypage.h"
+#include "popupmenupane.h"
 
 PopupMenuTaskMenu::PopupMenuTaskMenu(
-      PopupMenuPlugin *_m,
+      PopupMenuPane *_m,
       QObject *parent)
     : QObject (parent)
 {
-    paintElement = nullptr;
+//    paintElement = nullptr;
 
     mnu = _m;
     editElementAction = new QAction("Edit PlugIn-Properties...", this);
@@ -31,7 +32,7 @@ void PopupMenuTaskMenu::onClicked()
         QMessageBox::information(0,"qqqqq","1212212");
     }*/
 
-    PopupMenuPropertyPage p(mnu);
+    PopupMenuPropertyPage p(this->mnu);
     p.exec();
 }
 
